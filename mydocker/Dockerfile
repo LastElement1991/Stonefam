@@ -6,7 +6,7 @@
 
 FROM ubuntu:16.04
 
-RUN echo 'ggggggHello World from Docker!' > /var/www/html/index.html
+RUN echo 'Hello World from Docker!' > /var/www/html/index.html
 
 
 CMD ["/usr/sbin/apache2ctl", "-D","FOREGROUND"]
