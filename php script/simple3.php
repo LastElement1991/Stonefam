@@ -1,21 +1,15 @@
 <?php
-$name= 3;
-$surn= 5;
-$dep= 8;
-if ($name>$surn){ // true
-
-	$max = $name;
-} else  //false
-{
-	$max=$surn;
+$one=3;
+$two=5;
+$free=7;
+if ($one>$two){
+$max=$one;
+}else {
+  $max=$two;
 }
-if ($max>$dep){ //true
-  
-} else { //false
-
-	$max=$dep;
+if ($max<$free){
+$max=$free;
 }
-
 echo $max;
 
 
