@@ -31,7 +31,7 @@ function srt_air($name,$lenght)
 //        }
     }
     if ($str_air!= $name) {
-        echo "err";
+        echo "Ты мне дичь втираешь  - $name";
         die;
     }
 
