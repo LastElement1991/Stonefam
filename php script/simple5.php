@@ -22,28 +22,29 @@ function srt_air($name,$lenght)
     $str_air = '';
     $i = 0;
     while ($i < $lenght) {
-        $str_air .= $name[$i];
-        $i++;
-        switch ($i) {
-            case 4:
-                echo "err";
-                break;
-        }
+            $str_air .= $name[$i];
+            $i++;
+//        switch ($i) {
+//            case 4:
+//                echo "err";
+//                break;
+//        }
+    }
+    if ($str_air!= $name) {
+        echo "err";
+        die;
     }
 
     return $str_air;
 }
 
-
-//print srt_tap ($tron,6);
-//print srt_tap ($surn,6);
 $name='Vadim1001231';
 $name = srt_name ($name,6);
 $surn='Cherner342';
 $surn = srt_name ($surn,6);
-$dep='MOW768';
+$dep='MOW';
 $dep = srt_air ($dep,3);
-$arr = 'SIP';
+$arr = 'SIP123';
 $arr = srt_air ($arr,3);
 echo "
  ╔═════════════╦══════════════╦══════════════════════╗
