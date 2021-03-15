@@ -5,11 +5,7 @@ function srt_name($name,$lenght)
     $str='';
     $i = 0;
     while ($i<$lenght) {
-        $char = $name[$i] ?? null;
-        if (null === $char) {
-            break;
-        }
-        $str.= $char;
+        $str.= $name[$i];
         $i++;
     }
     if ($i<$lenght){
