@@ -4,16 +4,16 @@ function srt_name(string $name, int $length_name): string
 {
     $str = '';
     $i = 0;
-        while ($i < $length_name) {
-                $str .= $name[$i];
+    while ($i < $length_name) {
+        $str .= $name[$i];
+        $i++;
+        if ($name[$i] == '') {
+            while ($i < $length_name) {
+                $str .= ' ';
                 $i++;
-                if ($name[$i] == '') {
-                    while ($i < $length_name) {
-                        $str .= ' ';
-                        $i++;
-                    }
-                }
             }
+        }
+    }
     return $str;
 }
 
