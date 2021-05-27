@@ -1,0 +1,30 @@
+[
+ {
+   "departure": "LED",
+   "arrival": "BKK",
+   "flightTime": "3 hours",
+   "airline": "S7",
+   "cost": "1 $"
+ },
+ {
+   "departure": "LED",
+   "arrival": "BKK",
+   "flightTime": "3 hours",
+   "airline": "N4",
+   "cost": "2 $"
+ },
+ {
+   "departure": "LED",
+   "arrival": "DME",
+   "flightTime": "2 hours",
+   "airline": "S7",
+   "cost": "10 $"
+ },
+ {
+   "departure": "DME",
+   "arrival": "BKK",
+   "flightTime": "3 hours",
+   "airline": "S7",
+   "cost": "11 $"
+ }
+]
