@@ -11,38 +11,33 @@ echo "Please enter login\n";
 $login = readline();
 echo "Please enter password\n";
 $password = readline();
- 	$mass = file_get_contents('users.json');
-$info = json_encode($mass);
-$mass = json_decode($info);
-print_r($mass);
-if( $mass!= false){
-    foreach($info as $result ){
-        echo  $result ;
+ $result = file_get_contents('users.json');
+$json = json_decode($result, true);
+//foreach($json as $result ){
+  //      echo  $result ;
+
+if( $json = ['login'] !== $login ){
+    echo "Пользователь не найден в системе";
+
     }
-}
+
  }
  elseif ($x == '2'){
  echo "Please enter login\n";
 $login = readline();
 echo "Please enter password\n";
 $password = readline();
-$str = ',{
-   "login": "'.$login.'",
-   "password": "'.$password.'",
-   "role": "user"
- }
-';
-file_put_contents('users.json',$str, FILE_APPEND | LOCK_EX );
+$role = 'user';
+$mass =  array (
+'role' => $role,
+'login' => $login,
+'password' => $password
+);
+$json = json_encode($mass);
+file_put_contents('users.json',$json, FILE_APPEND | LOCK_EX );
 system('clear');
  }
 
 else {
 system('exit');	
 }
-
-$mass = file_get_contents('users.json', true);
-$info = explode("\n", $mass);
- foreach($info as $result ){
-print_r($result);
-die;
-   }

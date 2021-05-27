@@ -1,15 +1,1 @@
-{
-  "login": "Vadimka",
-  "password": "qwet123",
-  "role": "user"
-},
-{
-  "login": "Lexus",
-  "password": "awd1234",
-  "role": "user"
-}
-,{
-   "login": "idawlkawdd",
-   "password": "3274623",
-   "role": "user"
- }
+{"role":"user","login":"dawdaw","password":"dawdaw12"}
