@@ -1,1 +1,17 @@
-{"role":"user","login":"dawdaw","password":"dawdaw12"}
+[
+ {
+   "login": "admin",
+   "password": "234",
+   "role": "admin"
+ },
+ {
+   "login": "test",
+   "password": "123",
+   "role": "user"
+ }
+,{
+    "role": "user",
+    "login": "4353212",
+    "password": "897089654"
+}]
+
